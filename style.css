@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --head-bg:hsl(180, 29%, 50%);
+    --bg-cyan: hsl(180, 52%, 96%);
+    --filter-cyan:hsl(180, 31%, 95%);
+    --dark-color:hsl(180, 8%, 52%);
+    --deep-dark-color:hsl(180, 14%, 20%);
+    --accent-color: hsl(180deg 39% 56%);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    user-select: none;
+}
+
+header{
+    background-image: url(./images/bg-header-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--head-bg) ;
+    height: 21vh;
+}
+nav{
+    position: relative;
+    top: 155px;
+    background-color: white;
+    padding: 1em 4em;
+    border-radius: 5px;
+    margin: 0 150px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    max-width: 90%;
+}
+nav ul li{
+    margin-right: 2em;
+    background-color: var(--filter-cyan);
+    display: flex;
+    align-items: center;
+    color: var(--accent-color);
+    border-radius: 0.2em;
+    overflow: hidden;
+}
+nav ul li span{
+    margin-left: 0.5em;
+}
+nav ul li div{
+    padding: 0.5em;
+    background-color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    margin-left: 0.5em;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+nav ul li div:hover{
+    background-color: var(--deep-dark-color);
+}
+nav .clear-filter{
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+nav .clear-filter:hover{
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+.main{
+    padding: 60px 150px;
+    background-color: var(--bg-cyan);
+}
+.job-item{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.left-part{
+    display: flex;
+}
+.featured{
+    border-style: inset;
+    border: none;
+    border-left: 4px var(--dark-color) solid;
+}
+.logo{
+    margin-right: 1.5em;
+}
+.job-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.upline{
+    display: flex;
+    align-items: center;
+}
+.comp-name{
+    font-weight: 700;
+    color: var(--accent-color);
+}
+.tag-new{
+    background-color: var(--accent-color);
+    margin-left:1em;
+    padding: 6px 6px 4px 6px;
+    color: white;
+    font-weight: 500;
+    border-radius: 12px;
+}
+.tag-featured {
+    background-color: var(--deep-dark-color);
+    padding: 6px 6px 4px 6px;
+    color: white;
+    font-weight: 500;
+    border-radius: 12px;
+    margin-left: 1em;
+}
+.post-vacant{
+    font-weight: 700;
+    font-size: 1.2em;
+    color: var(--deep-dark-color);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.post-vacant:hover{
+    color: var(--accent-color);
+}
+.job-request{
+    color: var(--dark-color);
+}
+.job-request span{
+    margin: 0 0.5em;
+}
+.job-skills{
+    justify-self: flex-end;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+.job-skills .skills{
+    padding: 6px 6px 4px 6px;
+    background-color: var(--filter-cyan);
+    margin: 0 0.5em;
+    border-radius: 3px;
+    cursor: pointer;
+    color: var(--dark-color);
+    transition: all 0.2s ease-in-out;
+}
+.job-skills .skills:hover{
+    color: var(--filter-cyan);
+    background-color: var(--accent-color);
+}
